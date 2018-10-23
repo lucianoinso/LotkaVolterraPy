@@ -1,4 +1,4 @@
-""" Code can be found at www.github.com/lucianoinso """
+""" Code can be found at https://github.com/lucianoinso/LotkaVolterraPy """
 import matplotlib.pyplot as plt
 import math
 
@@ -92,14 +92,14 @@ if __name__ == '__main__':
 
     t, r, f = rungeKutta(x0, y0, h, int(iters))
 
-    # Print in console the result in format: Time - RabbitPopulation - FoxesPopulation
+    # Prints the result in the format: Time - RPopulation - FPopulation
     for i, j, k in zip(t, r, f):
         print(str(i) + " - " + str(j) + " - " + str(k))
 
     axes = plt.gca()
 
     # Plot the predator and prey population through time
-    plotPredandPrey(t, r, f) 
+    plotPredandPrey(t, r, f)
 
     # Plot the predator vs prey population
     plotPredvsPrey(r, f)
