@@ -1,4 +1,4 @@
-""" Code can be found at https://github.com/lucianoinso/LotkaVolterraPy """
+""" This code can be found at https://github.com/lucianoinso/LotkaVolterraPy """
 import matplotlib.pyplot as plt
 import math
 
