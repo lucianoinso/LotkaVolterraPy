@@ -1,4 +1,3 @@
-""" This code can be found at https://github.com/lucianoinso/LotkaVolterraPy """
 import matplotlib.pyplot as plt
 import math
 
@@ -63,9 +62,10 @@ def plotPredandPrey(t, r, f):
 
 def plotPredvsPrey(r, f):
     plt.grid()
-    plt.plot(f, r, 'C3')
-    plt.xlabel("Poblacion de zorros")
-    plt.ylabel("Poblacion de conejos")
+    plt.plot(r, f, 'C3')
+    plt.xlabel("Poblacion de conejos")
+    plt.ylabel("Poblacion de zorros")
+
     plt.show()
 
 
@@ -92,14 +92,14 @@ if __name__ == '__main__':
 
     t, r, f = rungeKutta(x0, y0, h, int(iters))
 
-    # Prints the result in the format: Time - RPopulation - FPopulation
+    # Print in console the result in format: Time - RabbitPopulation - FoxesPopulation
     for i, j, k in zip(t, r, f):
         print(str(i) + " - " + str(j) + " - " + str(k))
 
     axes = plt.gca()
 
     # Plot the predator and prey population through time
-    plotPredandPrey(t, r, f)
+    plotPredandPrey(t, r, f) 
 
     # Plot the predator vs prey population
     plotPredvsPrey(r, f)
