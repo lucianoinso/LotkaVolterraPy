@@ -46,8 +46,8 @@ def rungeKutta(x0, y0, h, iters):
 def plotPredandPrey(t, r, f):
     plt.grid()
 
-    plt.plot(t, f, 'C1', label='Zorros')
-    plt.plot(t, r, 'C5', label='Conejos')
+    plt.plot(t, f, 'C1', label='Zorros', linestyle='dotted')
+    plt.plot(t, r, 'C5', label='Conejos', linestyle='dashed')
     plt.xlabel("Tiempo")
     plt.ylabel("Poblacion")
     axes = plt.gca()
